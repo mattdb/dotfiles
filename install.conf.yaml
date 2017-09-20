@@ -1,13 +1,13 @@
 - clean: ['~']
 
 - link:
-  ~/.bash_profile: bash_profile
-  ~/.gitconfig: gitconfig
-  # ~/.ssh/config:
-  #   path: ssh/config
-  #   create: true
-  ~/.zshrc: zshrc
+    ~/.bash_profile: bash_profile
+    ~/.gitconfig: gitconfig
+    # ~/.ssh/config:
+    #   path: ssh/config
+    #   create: true
+    ~/.zshrc: zshrc
 
 - brewfile:
-  # This accepts the same options as `brew bundle` command:
-  file: Brewfile
+    # This accepts the same options as `brew bundle` command:
+    file: Brewfile
