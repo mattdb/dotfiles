@@ -1,0 +1,67 @@
+[user]
+  name = Matt Bauer
+  email = bauer@sitespark.com
+  signingkey = C0522772
+[alias]
+  co = checkout
+  # Log display from screencast, with train tracks.
+  l = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
+  # Alternate log display from Scott Chacon
+  lol = log --pretty=oneline --abbrev-commit --graph --decorate
+  # Other useful aliases:
+  unstage = reset HEAD
+  staged = diff --cached
+  unstaged = diff
+  current-branch = !git symbolic-ref -q HEAD | sed -e 's|^refs/heads/||'
+  # Usage: git track origin/feature-123-login-form
+  track = checkout -t
+  bail = reset --hard HEAD^
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  ui = true
+[core]
+  excludesfile = /Users/matt/.gitignore
+  editor = vim
+  autocrlf = input
+[apply]
+  whitespace = warn
+[format]
+  pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
+[github]
+  user = mattdb
+[help]
+  autocorrect = 1
+[status]
+  submodule = 1
+[push]
+  default = upstream
+[mergetool]
+  keepBackup = true
+  prompt = false
+[difftool "Kaleidoscope"]
+  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[diff]
+  tool = Kaleidoscope
+[difftool]
+  prompt = false
+[mergetool "Kaleidoscope"]
+  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+  trustExitCode = true
+[merge]
+  tool = Kaleidoscope
+[filter "media"]
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f
+[credential]
+  helper = osxkeychain
+[commit]
+  gpgsign = true
+[gpg]
+  program = /usr/local/bin/gpg
+[filter "lfs"]
+  required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
