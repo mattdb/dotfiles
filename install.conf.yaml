@@ -6,7 +6,9 @@
     # ~/.ssh/config:
     #   path: ssh/config
     #   create: true
+    ~/.gitignore: gitignore-global
     ~/.zshrc: zshrc
+
 
 - brewfile:
     # This accepts the same options as `brew bundle` command:
