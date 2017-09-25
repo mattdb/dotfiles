@@ -1,0 +1,1 @@
+EXCLUDES="*.md dotbot dotbot* UNLICENSE Brewfile install* keyrings *.gpg"
