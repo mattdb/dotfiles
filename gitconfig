@@ -16,6 +16,7 @@
   # Usage: git track origin/feature-123-login-form
   track = checkout -t
   bail = reset --hard HEAD^
+  st = status --branch --short
 [color]
   diff = auto
   status = auto
