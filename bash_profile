@@ -1,9 +1,9 @@
 eval "$(rbenv init -)"
 
-# start a line with a space to avoid storing it in history 
+# start a line with a space to avoid storing it in history
 export HISTCONTROL=ignorespace
-
-PATH=./bin:$PATH
+export GOPATH=$HOME/code/golang
+export PATH=./bin:$HOME/code/bin:$PATH:$GOPATH/bin:/usr/local/opt/go/libexec/bin
 
 
 
