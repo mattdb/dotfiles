@@ -65,11 +65,14 @@
       "one-light-syntax"
     ]
   editor:
-    fontSize: 13
+    fontSize: 16
     invisibles: {}
+    lineHeight: 1.3
     preferredLineLength: 90
     scrollPastEnd: true
     showIndentGuide: true
+    softWrapHangingIndent: 2
+    tabType: "soft"
   elmjutsu:
     autocompleteEnabled: true
     autocompleteMaxSuggestions: 50
@@ -97,6 +100,7 @@
   "one-light-ui": {}
   "opened-files":
     removeOnClose: true
+  "package-sync": {}
   "prettier-atom":
     formatOnSaveOptions: {}
   "rails-transporter":
@@ -115,7 +119,7 @@
   editor:
     autoIndentOnPaste: true
     preferredLineLength: 90
-    softWrap: true
-    softWrapAtPreferredLineLength: true
+    softWrap: false
+    softWrapAtPreferredLineLength: false
     softWrapHangingIndent: 4
     tabLength: 4
