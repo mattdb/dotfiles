@@ -1,0 +1,14 @@
+packages: [
+  "an-old-hope-syntax"
+  "dash"
+  "elm-format"
+  "elmjutsu"
+  "hasklig"
+  "html-to-elm"
+  "language-docker"
+  "language-elm"
+  "package-sync"
+  "pure-syntax"
+  "single-click-open"
+  "vim-mode-plus"
+]
