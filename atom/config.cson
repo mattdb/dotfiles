@@ -61,8 +61,8 @@
     projectHome: "/Users/matt/code/"
     telemetryConsent: "limited"
     themes: [
-      "one-light-ui"
-      "one-light-syntax"
+      "one-dark-ui"
+      "an-old-hope-syntax"
     ]
   editor:
     fontSize: 16
@@ -83,6 +83,8 @@
     showSidekick: true
   "exception-reporting":
     userId: "c251c093-269f-474d-bbb6-7fd145722626"
+  hasklig:
+    fontWeight: "regular"
   "language-elm":
     autocompleteEnabled: false
   linter:

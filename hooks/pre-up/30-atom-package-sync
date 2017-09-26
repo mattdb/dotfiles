@@ -1,0 +1,6 @@
+#!/bin/sh
+
+if [ ! -e "$HOME"/.atom/packages/package-sync/package.json ]; then
+  apm install package-sync
+fi
+
