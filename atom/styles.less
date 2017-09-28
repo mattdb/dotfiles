@@ -1,0 +1,43 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed.
+ *
+ * If you are unfamiliar with LESS, you can read more about it here:
+ * http://www.lesscss.org
+ */
+
+.tree-view {
+
+}
+
+// style the background and foreground colors on the atom-text-editor-element
+// itself
+atom-text-editor {
+
+}
+
+// To style other content in the text editor's shadow DOM, use the ::shadow
+// expression
+atom-text-editor::shadow .cursor {
+
+}
+
+// The code below enables contextual alternates and ligatures but disables them on your
+// `cursor-line` so you don't sacrifice "editability".
+* {
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-feature-settings: "liga" on, "calt" on;
+}
+
+atom-text-editor .cursor-line {
+  -webkit-font-feature-settings: "liga" off, "calt" off;
+}
+div.find-and-replace atom-text-editor.editor .line {
+  -webkit-font-feature-settings: "liga" off, "calt" off;
+}
+atom-text-editor.editor .syntax--string.syntax--quoted,
+atom-text-editor.editor .syntax--string.syntax--regexp {
+  -webkit-font-feature-settings: "liga" off, "calt" off;
+}

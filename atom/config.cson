@@ -1,0 +1,129 @@
+"*":
+  "advanced-open-file":
+    createFileInstantly: true
+    defaultInputValue: "Project root"
+    fuzzyMatch: true
+  "aligner-scss": {}
+  "atom-beautify":
+    elm:
+      beautify_on_save: true
+    general:
+      _analyticsUserId: "cf33d0b5-2d72-4710-81c1-9f3754eee1d7"
+    jade: {}
+    js:
+      disabled: true
+    ruby:
+      disabled: true
+      indent_size: 2
+    sass: {}
+    scss:
+      beautify_on_save: true
+      force_indentation: true
+      preserve_newlines: true
+  "atom-package-deps":
+    ignored: []
+  "autocomplete-plus":
+    confirmCompletion: "tab always, enter when suggestion explicitly selected"
+    enableAutoConfirmSingleSuggestion: false
+  core:
+    closeDeletedFileTabs: true
+    closeEmptyWindows: false
+    customFileTypes:
+      "source.ruby": [
+        "Cheffile"
+      ]
+    disabledPackages: [
+      "linter-eslint"
+      "language-csharp"
+      "language-clojure"
+      "minimap-highlight-selected"
+      "minimap"
+      "aligner-javascript"
+      "color-picker"
+      "linter-js-standard"
+      "linter-haml"
+      "linter-js-yaml"
+      "zentabs"
+      "atom-panels"
+      "prettier-atom"
+      "hasklig"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "desktop.ini"
+      "vendor/*"
+    ]
+    packagesWithKeymapsDisabled: []
+    projectHome: "/Users/matt/code/"
+    telemetryConsent: "limited"
+    themes: [
+      "one-dark-ui"
+      "an-old-hope-syntax"
+    ]
+  editor:
+    fontFamily: "Monoid HalfTight"
+    fontSize: 15
+    invisibles: {}
+    lineHeight: 1.3
+    preferredLineLength: 90
+    scrollPastEnd: true
+    showIndentGuide: true
+    softWrapHangingIndent: 2
+    tabType: "soft"
+  elmjutsu:
+    autocompleteEnabled: true
+    autocompleteMaxSuggestions: 50
+    autocompleteSnippetsEnabled: true
+    cacheDirectory: "/var/folders/pk/gw0kxksn1fx0747r3b7f_5t00000gn/T/elmjutsu26927V4w6JyuRQCfp"
+    globalAutocompleteEnabled: true
+    hyperclickEnabled: true
+    showSidekick: true
+  "exception-reporting":
+    userId: "c251c093-269f-474d-bbb6-7fd145722626"
+  hasklig:
+    fontWeight: "regular"
+  "language-elm":
+    autocompleteEnabled: false
+  linter:
+    disabledProviders: [
+      "RuboCop"
+    ]
+  "linter-js-standard": {}
+  "linter-rubocop": {}
+  "linter-ui-default":
+    panelHeight: 69
+  minimap:
+    plugins:
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+  "one-light-ui": {}
+  "opened-files":
+    removeOnClose: true
+  "package-sync": {}
+  "prettier-atom":
+    formatOnSaveOptions: {}
+  "rails-transporter":
+    controllerSpecType: "features"
+  "standard-formatter":
+    formatOnSave: true
+  "tree-view":
+    alwaysOpenExisting: true
+    autoReveal: true
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false
+  zentabs:
+    manualMode: true
+".elm.source":
+  editor:
+    autoIndentOnPaste: true
+    preferredLineLength: 90
+    softWrap: false
+    softWrapAtPreferredLineLength: false
+    softWrapHangingIndent: 4
+    tabLength: 4
