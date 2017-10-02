@@ -75,6 +75,8 @@
     showIndentGuide: true
     softWrapHangingIndent: 2
     tabType: "soft"
+  "elm-format":
+    binary: "elm-format-0.18"
   elmjutsu:
     autocompleteEnabled: true
     autocompleteMaxSuggestions: 50
