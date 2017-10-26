@@ -35,3 +35,21 @@
 
 'atom-workspace atom-text-editor:not([mini])':
   'cmd-shift-L': 'unset!'
+
+'atom-text-editor:not([mini])[data-grammar^="source elm"]':
+  'shift-f6': 'linter-elm-make:quick-fix-all'
+
+  # Add this to use the default UI:
+  'f6': 'linter-elm-make:quick-fix'
+
+  # Add this instead if you want to use the Intentions UI:
+  # 'f6': 'intentions:show'
+
+  # Add this instead if you want to use `atom-ide-ui`:
+  # 'f6': 'diagnostics:show-actions-at-position'
+
+'.linter-elm-make atom-text-editor[mini]':
+    'f6': 'core:confirm'
+
+'.platform-darwin':
+  'cmd-|': 'elm-navigator:toggle'
