@@ -26,6 +26,7 @@
     ignored: []
   "autocomplete-plus":
     confirmCompletion: "tab always, enter when suggestion explicitly selected"
+    defaultProvider: "Fuzzy"
     enableAutoConfirmSingleSuggestion: false
   core:
     closeDeletedFileTabs: true
@@ -60,7 +61,9 @@
       "desktop.ini"
       "vendor/*"
     ]
-    packagesWithKeymapsDisabled: []
+    packagesWithKeymapsDisabled: [
+      "autocomplete-plus"
+    ]
     projectHome: "/Users/matt/code/"
     telemetryConsent: "limited"
     themes: [
@@ -83,13 +86,12 @@
     binary: "elm-format-0.18"
   elmjutsu:
     autocompleteEnabled: true
+    autocompleteFuzzyFilteringEnabled: true
     autocompleteMaxSuggestions: 50
     autocompleteSnippetsEnabled: true
     cacheDirectory: "/var/folders/pk/gw0kxksn1fx0747r3b7f_5t00000gn/T/elmjutsu26927V4w6JyuRQCfp"
     globalAutocompleteEnabled: true
     hyperclickEnabled: true
-    inferExpectedTypeAtCursorOnTheFly: true
-    showScopeBar: true
     showSidekick: true
     sidekickPosition: "right"
     sidekickSize: 300

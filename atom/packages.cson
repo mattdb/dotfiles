@@ -18,6 +18,7 @@ packages: [
   "file-icons"
   "hasklig"
   "html-to-elm"
+  "hyperclick"
   "intentions"
   "intentions-colorpicker"
   "language-docker"
