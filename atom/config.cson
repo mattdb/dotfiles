@@ -44,12 +44,12 @@
       "aligner-javascript"
       "color-picker"
       "linter-js-standard"
-      "linter-haml"
       "linter-js-yaml"
       "zentabs"
       "atom-panels"
       "prettier-atom"
       "hasklig"
+      "linter-haml"
     ]
     ignoredNames: [
       ".git"
@@ -82,8 +82,7 @@
     showIndentGuide: true
     softWrapHangingIndent: 2
     tabType: "soft"
-  "elm-format":
-    binary: "elm-format-0.18"
+  "elm-format": {}
   elmjutsu:
     autocompleteEnabled: true
     autocompleteFuzzyFilteringEnabled: true
@@ -115,7 +114,7 @@
   "linter-js-standard": {}
   "linter-rubocop": {}
   "linter-ui-default":
-    panelHeight: 179
+    panelHeight: 259
     showPanel: true
   minimap:
     plugins:
@@ -140,8 +139,7 @@
   "tree-view":
     alwaysOpenExisting: true
     autoReveal: true
-  "vim-mode-plus":
-    notifiedCoffeeScriptNoLongerSupportedToExtendVMP: true
+  "vim-mode-plus": {}
   welcome:
     showOnStartup: false
   zentabs:
