@@ -67,6 +67,7 @@
   'alt-shift-l': 'elmjutsu:surround-with-let'
   'alt-t': 'elmjutsu:lift-to-top-level'
   'alt-i': 'elmjutsu:infer-type'
+  'f11': 'elmjutsu:toggle-sidekick'
 
 
 '.linter-elm-make atom-text-editor[mini]':
