@@ -24,6 +24,12 @@
 # If you are unfamiliar with CSON, you can read more about it here:
 # https://github.com/bevry/cson#what-is-cson
 
+'atom-text-editor':
+  'ctrl-esc': 'autocomplete-plus:activate'
+
+'atom-text-editor.autocomplete-active':
+  'escape': 'autocomplete-plus:cancel'
+
 'atom-text-editor.vim-mode-plus:not(.insert-mode)':
   'shift-H': 'vim-mode-plus:move-to-first-character-of-line'
   'shift-L': 'vim-mode-plus:move-to-last-character-of-line'
@@ -35,3 +41,36 @@
 
 'atom-workspace atom-text-editor:not([mini])':
   'cmd-shift-L': 'unset!'
+
+'atom-text-editor:not([mini])[data-grammar^="source elm"]':
+  'shift-f6': 'linter-elm-make:quick-fix-all'
+
+  # Add this to use the default UI:
+  'f6': 'linter-elm-make:quick-fix'
+
+  # Add this instead if you want to use the Intentions UI:
+  # 'f6': 'intentions:show'
+
+  # Add this instead if you want to use `atom-ide-ui`:
+  # 'f6': 'diagnostics:show-actions-at-position'
+
+  # elmjutsu magic
+  'f12': 'elmjutsu:go-to-definition'
+  'shift-f12': 'elmjutsu:find-usages'
+  'ctrl-f12': 'elmjutsu:go-back'
+  'ctrl-r': 'elmjutsu:go-to-symbol'
+  'f7': 'elmjutsu:go-to-next-usage'
+  'shift-f7': 'elmjutsu:go-to-previous-usage'
+  'f2': 'elmjutsu:add-import'
+  'ctrl-f2': 'elmjutsu:rename-symbol'
+  'alt-l': 'elmjutsu:lift-to-let'
+  'alt-shift-l': 'elmjutsu:surround-with-let'
+  'alt-t': 'elmjutsu:lift-to-top-level'
+  'alt-i': 'elmjutsu:infer-type'
+
+
+'.linter-elm-make atom-text-editor[mini]':
+    'f6': 'core:confirm'
+
+'.platform-darwin':
+  'cmd-|': 'elm-navigator:toggle'

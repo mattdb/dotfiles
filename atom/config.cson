@@ -3,7 +3,9 @@
     createFileInstantly: true
     defaultInputValue: "Project root"
     fuzzyMatch: true
-  "aligner-scss": {}
+  "aligner-scss":
+    "!-enabled": true
+    "{-enabled": true
   "atom-beautify":
     elm:
       beautify_on_save: true
@@ -24,6 +26,7 @@
     ignored: []
   "autocomplete-plus":
     confirmCompletion: "tab always, enter when suggestion explicitly selected"
+    defaultProvider: "Fuzzy"
     enableAutoConfirmSingleSuggestion: false
   core:
     closeDeletedFileTabs: true
@@ -41,12 +44,12 @@
       "aligner-javascript"
       "color-picker"
       "linter-js-standard"
-      "linter-haml"
       "linter-js-yaml"
       "zentabs"
       "atom-panels"
       "prettier-atom"
       "hasklig"
+      "linter-haml"
     ]
     ignoredNames: [
       ".git"
@@ -58,16 +61,20 @@
       "desktop.ini"
       "vendor/*"
     ]
-    packagesWithKeymapsDisabled: []
+    packagesWithKeymapsDisabled: [
+      "autocomplete-plus"
+    ]
     projectHome: "/Users/matt/code/"
     telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
       "an-old-hope-syntax"
     ]
+  "dash-ui":
+    themeColor: "Orange"
   editor:
-    fontFamily: "Monoid HalfTight"
-    fontSize: 15
+    fontFamily: "Fira Code"
+    fontSize: 16
     invisibles: {}
     lineHeight: 1.3
     preferredLineLength: 90
@@ -75,28 +82,40 @@
     showIndentGuide: true
     softWrapHangingIndent: 2
     tabType: "soft"
+  "elm-format": {}
   elmjutsu:
     autocompleteEnabled: true
+    autocompleteFuzzyFilteringEnabled: true
     autocompleteMaxSuggestions: 50
     autocompleteSnippetsEnabled: true
     cacheDirectory: "/var/folders/pk/gw0kxksn1fx0747r3b7f_5t00000gn/T/elmjutsu26927V4w6JyuRQCfp"
     globalAutocompleteEnabled: true
     hyperclickEnabled: true
     showSidekick: true
+    sidekickPosition: "right"
+    sidekickSize: 300
   "exception-reporting":
     userId: "c251c093-269f-474d-bbb6-7fd145722626"
+  "file-icons":
+    coloured: false
+    onChanges: true
   hasklig:
     fontWeight: "regular"
+  "hey-pane": {}
   "language-elm":
     autocompleteEnabled: false
   linter:
     disabledProviders: [
       "RuboCop"
     ]
+  "linter-elm-make":
+    showInferredTypeAnnotations: true
+    useDatatips: true
   "linter-js-standard": {}
   "linter-rubocop": {}
   "linter-ui-default":
-    panelHeight: 69
+    panelHeight: 259
+    showPanel: true
   minimap:
     plugins:
       "highlight-selected": true
@@ -104,13 +123,19 @@
   "one-light-ui": {}
   "opened-files":
     removeOnClose: true
-  "package-sync": {}
+  "package-sync":
+    createOnChange: true
+    forceOverwrite: true
   "prettier-atom":
     formatOnSaveOptions: {}
   "rails-transporter":
     controllerSpecType: "features"
+  "scroll-through-time":
+    direction: "right"
   "standard-formatter":
     formatOnSave: true
+  tabs:
+    enableVcsColoring: true
   "tree-view":
     alwaysOpenExisting: true
     autoReveal: true
