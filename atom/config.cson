@@ -115,6 +115,7 @@
     alwaysOpenExisting: true
     autoReveal: true
     hideVcsIgnoredFiles: true
+  "vim-mode-plus": {}
   welcome:
     showOnStartup: false
   zentabs:
