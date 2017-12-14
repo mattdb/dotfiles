@@ -17,6 +17,8 @@ packages: [
   "elm-test-runner"
   "elmjutsu"
   "file-icons"
+  "goto"
+  "goto-last-edit"
   "hasklig"
   "html-to-elm"
   "hyperclick"
@@ -33,5 +35,6 @@ packages: [
   "pigments"
   "pure-syntax"
   "single-click-open"
+  "teletype"
   "vim-mode-plus"
 ]
