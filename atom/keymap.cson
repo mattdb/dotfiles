@@ -34,15 +34,25 @@
   'shift-H': 'vim-mode-plus:move-to-first-character-of-line'
   'shift-L': 'vim-mode-plus:move-to-last-character-of-line'
 
-# "atom-text-editor[data-grammar='source elm']":
-'atom-workspace':
-  'cmd-shift-I': 'elm-jutsu:add-import'
+  'g =': 'vim-mode-plus:align-occurrence'
+
 
 
 'atom-workspace atom-text-editor:not([mini])':
   'cmd-shift-L': 'unset!'
+  'cmd-ctrl-shift-left': 'window:move-active-item-to-pane-on-left'
+  'cmd-ctrl-shift-right': 'window:move-active-item-to-pane-on-right'
+  'cmd-ctrl-shift-up': 'window:move-active-item-to-pane-above'
+  'cmd-ctrl-shift-down': 'window:move-active-item-to-pane-below'
+
+  'cmd-x': 'vim-mode-plus:exchange-pane'
+  'cmd-K': 'vim-mode-plus:move-pane-to-very-top'
+  'cmd-J': 'vim-mode-plus:move-pane-to-very-bottom'
+  'cmd-H': 'vim-mode-plus:move-pane-to-very-left'
+  'cmd-L': 'vim-mode-plus:move-pane-to-very-right'
 
 'atom-text-editor:not([mini])[data-grammar^="source elm"]':
+  'cmd-shift-I': 'elm-jutsu:install-package'
   'shift-f6': 'linter-elm-make:quick-fix-all'
 
   # Add this to use the default UI:
@@ -75,3 +85,24 @@
 
 '.platform-darwin':
   'cmd-|': 'elm-navigator:toggle'
+
+
+'atom-text-editor.vim-mode-plus.normal-mode':
+
+  # open-on-github, github-diff: g
+  # -------------------------
+  'space g o': 'open-on-github:file'
+  'space g b': 'open-on-github:blame'
+  'space g h': 'open-on-github:history'
+  'space g i': 'open-on-github:issues'
+  'space g c': 'open-on-github:copy-url'
+  'space g r': 'open-on-github:branch-compare'
+  'space g g': 'open-on-github:repository'
+
+  'space g n': 'git-diff:move-to-next-diff'
+  'space g p': 'git-diff:move-to-previous-diff'
+  'space g d': 'git-diff:toggle-diff-list'
+
+  # surround: ys
+  # -------------------------
+  'S': 'vim-mode-plus:surround-smart-word'

@@ -26,7 +26,6 @@
     ignored: []
   "autocomplete-plus":
     confirmCompletion: "tab always, enter when suggestion explicitly selected"
-    defaultProvider: "Fuzzy"
     enableAutoConfirmSingleSuggestion: false
   core:
     closeDeletedFileTabs: true
@@ -113,7 +112,7 @@
   "linter-js-standard": {}
   "linter-rubocop": {}
   "linter-ui-default":
-    panelHeight: 259
+    panelHeight: 69
     showPanel: true
   minimap:
     plugins:
