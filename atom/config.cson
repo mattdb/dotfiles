@@ -90,6 +90,8 @@
     cacheDirectory: "/var/folders/pk/gw0kxksn1fx0747r3b7f_5t00000gn/T/elmjutsu26927V4w6JyuRQCfp"
     globalAutocompleteEnabled: true
     hyperclickEnabled: true
+    showSidekick: true
+    showTypesInTooltip: true
     sidekickPosition: "right"
     sidekickSize: 300
   "exception-reporting":
@@ -100,6 +102,8 @@
   hasklig:
     fontWeight: "regular"
   "hey-pane": {}
+  html2slim:
+    executePath: "/Users/matt/code/kc-api/erb2slim"
   "language-elm":
     autocompleteEnabled: false
   linter:
@@ -113,7 +117,6 @@
   "linter-rubocop": {}
   "linter-ui-default":
     panelHeight: 69
-    showPanel: true
   minimap:
     plugins:
       "highlight-selected": true

@@ -24,3 +24,12 @@
       {-| $1
       -}
     """
+
+  'Icon Definition':
+    'prefix': 'icondef'
+    'body': """
+      $1 : Element style variation msg
+      $1 =
+          makeIcon .$1
+      
+    """

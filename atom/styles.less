@@ -41,3 +41,10 @@ atom-text-editor.editor .syntax--string.syntax--quoted,
 atom-text-editor.editor .syntax--string.syntax--regexp {
   -webkit-font-feature-settings: "liga" off, "calt" off;
 }
+
+atom-text-editor:not([mini])[data-grammar^="source elm"] {
+  .elm-lens-marker {
+    background-color: rgba(0, 0, 0, 0.22);
+    border-top: 2px solid rgba(255,255,255,0.2);
+  }
+}
