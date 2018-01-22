@@ -82,6 +82,8 @@
     softWrapHangingIndent: 2
     tabType: "soft"
   "elm-format": {}
+  "elm-lens":
+    "markup-opacity": 40
   elmjutsu:
     autocompleteEnabled: true
     autocompleteFuzzyFilteringEnabled: true
@@ -90,7 +92,6 @@
     cacheDirectory: "/var/folders/pk/gw0kxksn1fx0747r3b7f_5t00000gn/T/elmjutsu26927V4w6JyuRQCfp"
     globalAutocompleteEnabled: true
     hyperclickEnabled: true
-    showSidekick: true
     showTypesInTooltip: true
     sidekickPosition: "right"
     sidekickSize: 300
@@ -116,7 +117,7 @@
   "linter-js-standard": {}
   "linter-rubocop": {}
   "linter-ui-default":
-    panelHeight: 69
+    panelHeight: 259
   minimap:
     plugins:
       "highlight-selected": true

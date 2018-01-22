@@ -12,7 +12,7 @@
   user = mattdb
 
 [credential]
-  helper = osxkeychain
+	helper = osxkeychain
 [commit]
   gpgsign = true
 [gpg]
