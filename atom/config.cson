@@ -49,6 +49,10 @@
       "prettier-atom"
       "hasklig"
       "linter-haml"
+      "elm-navigator"
+      "elm-test-runner"
+      "elm-lens"
+      "linter-elm-make"
     ]
     ignoredNames: [
       ".git"
@@ -81,16 +85,19 @@
     showIndentGuide: true
     softWrapHangingIndent: 2
     tabType: "soft"
-  "elm-format": {}
+  "elm-format":
+    binary: "/Users/matt/.local/bin/elm-format-0.19"
+  "elm-lens":
+    "markup-opacity": 30
   elmjutsu:
     autocompleteEnabled: true
     autocompleteFuzzyFilteringEnabled: true
     autocompleteMaxSuggestions: 50
     autocompleteSnippetsEnabled: true
     cacheDirectory: "/var/folders/pk/gw0kxksn1fx0747r3b7f_5t00000gn/T/elmjutsu26927V4w6JyuRQCfp"
+    elmMakeExecPath: "/usr/local/bin/elm-make"
     globalAutocompleteEnabled: true
     hyperclickEnabled: true
-    showSidekick: true
     showTypesInTooltip: true
     sidekickPosition: "right"
     sidekickSize: 300
@@ -111,12 +118,14 @@
       "RuboCop"
     ]
   "linter-elm-make":
+    elmMakeExecutablePath: "/usr/local/bin/elm-make"
+    elmPackageExecutablePath: "/usr/local/bin/elm-package"
     showInferredTypeAnnotations: true
     useDatatips: true
   "linter-js-standard": {}
   "linter-rubocop": {}
   "linter-ui-default":
-    panelHeight: 69
+    panelHeight: 259
   minimap:
     plugins:
       "highlight-selected": true
@@ -131,6 +140,9 @@
     formatOnSaveOptions: {}
   "rails-transporter":
     controllerSpecType: "features"
+  "ruby-test":
+    specFramework: "rspec"
+    testFramework: "minitest"
   "scroll-through-time":
     direction: "right"
   "standard-formatter":
