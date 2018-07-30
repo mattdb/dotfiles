@@ -7,7 +7,7 @@
 [user]
   name = Matt Bauer
   email = bauer@sitespark.com
-  signingkey = C0522772
+	signingkey = AA247366A341FB256FB740DF8B19FD47C0522772
 [github]
   user = mattdb
 
@@ -90,5 +90,5 @@
 [filter "lfs"]
   required = true
   clean = git-lfs clean -- %f
-  smudge = git-lfs smudge -- %f
-  process = git-lfs filter-process
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
