@@ -22,12 +22,15 @@
       beautify_on_save: true
       force_indentation: true
       preserve_newlines: true
+  "atom-ctags":
+    autoBuildTagsWhenActive: true
   "atom-package-deps":
     ignored: []
   "autocomplete-plus":
     confirmCompletion: "tab always, enter when suggestion explicitly selected"
     enableAutoConfirmSingleSuggestion: false
   core:
+    audioBeep: false
     closeDeletedFileTabs: true
     closeEmptyWindows: false
     customFileTypes:
@@ -46,13 +49,16 @@
       "linter-js-yaml"
       "zentabs"
       "atom-panels"
-      "prettier-atom"
       "hasklig"
       "linter-haml"
       "elm-navigator"
       "elm-test-runner"
       "elm-lens"
+      "html-to-elm"
       "linter-elm-make"
+      "goto"
+      "symbols-view"
+      "autocomplete-atom-api"
     ]
     ignoredNames: [
       ".git"
@@ -66,6 +72,7 @@
     ]
     packagesWithKeymapsDisabled: [
       "autocomplete-plus"
+      "goto"
     ]
     projectHome: "/Users/matt/code/"
     telemetryConsent: "limited"
@@ -77,7 +84,6 @@
     themeColor: "Orange"
   editor:
     fontFamily: "Fira Code"
-    fontSize: 16
     invisibles: {}
     lineHeight: 1.3
     preferredLineLength: 90
@@ -87,6 +93,7 @@
     tabType: "soft"
   "elm-format":
     binary: "/Users/matt/.local/bin/elm-format-0.19"
+    elmVersion: "0.18"
   "elm-lens":
     "markup-opacity": 30
   elmjutsu:
@@ -95,7 +102,6 @@
     autocompleteMaxSuggestions: 50
     autocompleteSnippetsEnabled: true
     cacheDirectory: "/var/folders/pk/gw0kxksn1fx0747r3b7f_5t00000gn/T/elmjutsu26927V4w6JyuRQCfp"
-    elmMakeExecPath: "/usr/local/bin/elm-make"
     globalAutocompleteEnabled: true
     hyperclickEnabled: true
     showTypesInTooltip: true
@@ -125,7 +131,10 @@
   "linter-js-standard": {}
   "linter-rubocop": {}
   "linter-ui-default":
+    alwaysTakeMinimumSpace: true
     panelHeight: 259
+    showPanel: true
+  "linter-ui-plus": {}
   minimap:
     plugins:
       "highlight-selected": true
@@ -137,7 +146,10 @@
     createOnChange: true
     forceOverwrite: true
   "prettier-atom":
-    formatOnSaveOptions: {}
+    formatOnSaveOptions:
+      enabled: true
+      isDisabledIfNotInPackageJson: true
+      showInStatusBar: true
   "rails-transporter":
     controllerSpecType: "features"
   "ruby-test":
@@ -149,11 +161,28 @@
     formatOnSave: true
   tabs:
     enableVcsColoring: true
+  "todo-show":
+    ignoreThesePaths: [
+      "node_modules"
+      "vendor"
+      "bower_components"
+      "*.pdf"
+      "elm-stuff"
+    ]
+    showInTable: [
+      "Text"
+      "Path"
+      "Line"
+    ]
+    sortBy: "Path"
+    statusBarIndicator: true
   "tree-view":
     alwaysOpenExisting: true
     autoReveal: true
     hideVcsIgnoredFiles: true
-  "vim-mode-plus": {}
+  "vim-mode-plus":
+    keymapPToPutWithAutoIndent: true
+    keymapSToSelect: true
   welcome:
     showOnStartup: false
   zentabs:
