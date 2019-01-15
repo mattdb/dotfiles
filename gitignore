@@ -53,4 +53,8 @@ tags
 .dropbox.attr
 .dropbox.cache
 
+# Direnv local settings
+.direnv
+.envrc
+
 
